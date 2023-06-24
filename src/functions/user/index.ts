@@ -8,13 +8,6 @@ export const getAllUsers = {
             http: {
                 method: 'get',
                 path: 'users',
-                cors: {
-                    origin: "*",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    allowCredentials: true
-                }
             },
         },
     ]
@@ -26,13 +19,7 @@ export const createUser = {
             http: {
                 method: 'post',
                 path: 'user',
-                cors: {
-                    origin: "*",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    allowCredentials: true
-                }
+
             },
         },
     ],
@@ -46,13 +33,6 @@ export const updateUser = {
             http: {
                 method: 'put',
                 path: 'user/{id}',
-                cors: {
-                    origin: "*",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    allowCredentials: true
-                }
             },
         },
     ],
@@ -65,13 +45,6 @@ export const deleteUser = {
             http: {
                 method: 'delete',
                 path: 'user/{id}',
-                cors: {
-                    origin: "*",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    allowCredentials: true
-                }
             },
         },
     ],
